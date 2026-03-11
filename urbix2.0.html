@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/favicon.png" type="image/png">
+    <title>Urbix - Login</title>
+    <link rel="stylesheet" href="urbix2.0.css">
+
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <section class="hero-side">
+            <a href="urbix2.0.html">
+                <img src="imgs/logo2.png" alt="Urbix" class="urbix-logo-top"> 
+            </a>
+            <h1 class="hero-text">
+                Conectando sua cidade em<span> TEMPO REAL.</span>
+            </h1>
+            <div class="mockup-container"></div>
+        </section>
+
+        <section class="login-side">
+            <div class="login-box">
+                <div class="tab-nav">
+                    <span id="tab-login" class="tab-link active" onclick="toggleMode(false)">Entrar</span>
+                    <span id="tab-signup" class="tab-link" onclick="toggleMode(true)">Criar Conta</span>
+                </div>
+
+                <form id="auth-form">
+                    <div id="signup-fields" class="hidden">
+                        <div class="input-group"><input type="text" id="name" placeholder="Nome Completo"></div>
+                    </div>
+
+                    <div class="input-group"><input type="email" id="email" placeholder="Email" required></div>
+                    <div class="input-group"><input type="password" id="password" placeholder="Senha" required></div>
+
+                    <div id="confirm-password-field" class="hidden">
+                        <div class="input-group"><input type="password" id="confirmPassword"
+                                placeholder="Confirme a senha"></div>
+                    </div>
+
+                    <button type="submit" id="btn-submit" class="btn-primary">Entrar</button>
+                </form>
+
+                <a href="#" class="forgot-link">Esqueceu a senha?</a>
+
+                <div id="social-section">
+                   
+
+                    <div class="social-row">
+                        <button class="btn-social" id="btn-google">
+                            <i class="fa-brands fa-google"></i> Google
+                        </button>
+                        <button class="btn-social" id="btn-facebook">
+                            <i class="fa-brands fa-facebook"></i> Facebook
+                        </button>
+                    </div>
+
+                    <button class="btn-create" onclick="toggleMode(true)">Criar nova conta</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+     <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#">Sobre</a>            
+            <a href="#">Carreiras</a>
+            <a href="#">Ajuda</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+            <a href="#">Localizações</a>
+            <a href="#">Urbix Lite</a>        
+        </div>
+    <div class="copyright">
+        <i class="fa-solid fa-infinity"></i> 2026 Urbix Todos os Diretos Reservados
+    </div>
+    </footer>
+    
+
+    <script type="module">
+       
+        // ... ( import e FirebaseConfig)
+
+        window.toggleMode = (signup) => {
+            const isSignup = signup;
+            document.getElementById('signup-fields').classList.toggle('hidden', !signup);
+            document.getElementById('confirm-password-field').classList.toggle('hidden', !signup);
+            document.getElementById('tab-login').classList.toggle('active', !signup);
+            document.getElementById('tab-signup').classList.toggle('active', signup);
+            document.getElementById('btn-submit').innerText = signup ? 'Cadastrar' : 'Entrar';
+            document.getElementById('social-section').classList.toggle('hidden', signup);
+        };
+        
+        // Google Login
+        document.getElementById('btn-google').addEventListener('click', async () => {
+            try {
+                await signInWithPopup(auth, googleProvider);
+                alert("Logado com Google!");
+            } catch (error) {
+                alert("Erro no Google Login: " + error.message);
+            }
+        });
+
+        document.getElementById('btn-facebook').addEventListener('click', () => alert("Em breve!"));
+    
+    </script>
+</body>
+
+</html>
