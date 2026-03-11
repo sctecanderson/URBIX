@@ -1,10 +1,8 @@
         :root {
             --urbix-gold: #F9A826;
-            /* Sua cor principal */
             --urbix-gold-hover: #F9A826;
             --bg-dark: #F3A124;
             --panel-dark: #000000;
-            /* Tom do painel da imagem */
             --input-bg: #000000;
             --input-border: #000000;
             --text-gray: #000000;
@@ -33,7 +31,6 @@
         .main-wrapper {
             display: flex;
             flex: 1;
-            /* Ocupa o espaço acima do footer */
             width: 100vw;
         }
 
