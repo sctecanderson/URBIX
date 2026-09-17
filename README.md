@@ -272,6 +272,7 @@ A ordem das fases é uma referência de execução, não uma exigência de desen
 ## 15. Próxima entrega
 
 **Auditar o projeto existente e depois criar o wireframe.** O wireframe deverá representar cinco abas, feed vertical + agrupamento horizontal, mapa de pinos e balões, fluxo de publicação, quatro status, histórico, central de atividades e perfil. O design definitivo e as datas dependem da validação das etapas anteriores.
+![MVP final](imgs/urbix-readme/tela1.png)![MVP final](imgs/urbix-readme/tela2.png)![MVP final](imgs/urbix-readme/tela3.png)![MVP final](imgs/urbix-readme/tela4.png)![MVP final](imgs/urbix-readme/tela5.png)
 
 ---
 
