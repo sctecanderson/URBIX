@@ -275,11 +275,11 @@ A ordem das fases é uma referência de execução, não uma exigência de desen
 
 
 <p align="center">
-  <img src="imgs/telas/tela1.png" width="180" alt="Tela 1">
-  <img src="imgs/telas/tela2.png" width="180" alt="Tela 2">
-  <img src="imgs/telas/tela3.png" width="180" alt="Tela 3">
-  <img src="imgs/telas/tela4.png" width="180" alt="Tela 4">
-  <img src="imgs/telas/tela5.png" width="180" alt="Tela 5">
+  <img src="imgs/telas/tela1.png" width="160" alt="Tela 1">
+  <img src="imgs/telas/tela2.png" width="160" alt="Tela 2">
+  <img src="imgs/telas/tela3.png" width="160" alt="Tela 3">
+  <img src="imgs/telas/tela4.png" width="160" alt="Tela 4">
+  <img src="imgs/telas/tela5.png" width="160" alt="Tela 5">
 </p>
 
 
