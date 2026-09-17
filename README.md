@@ -272,9 +272,16 @@ A ordem das fases é uma referência de execução, não uma exigência de desen
 ## 15. Próxima entrega
 
 **Auditar o projeto existente e depois criar o wireframe.** O wireframe deverá representar cinco abas, feed vertical + agrupamento horizontal, mapa de pinos e balões, fluxo de publicação, quatro status, histórico, central de atividades e perfil. O design definitivo e as datas dependem da validação das etapas anteriores.
-![MVP final](imgs/telas/tela1.png)![MVP final](imgs/telas/tela2.png)![MVP final](imgs/telas/tela3.png)![MVP final](imgs/telas/tela4.png)![MVP final](imgs/telas/tela5.png)
 
----
+
+<p align="center">
+  <img src="imgs/telas/tela1.png" width="180" alt="Tela 1">
+  <img src="imgs/telas/tela2.png" width="180" alt="Tela 2">
+  <img src="imgs/telas/tela3.png" width="180" alt="Tela 3">
+  <img src="imgs/telas/tela4.png" width="180" alt="Tela 4">
+  <img src="imgs/telas/tela5.png" width="180" alt="Tela 5">
+</p>
+
 
 <div align="center">
 
